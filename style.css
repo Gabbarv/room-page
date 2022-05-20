@@ -1,0 +1,226 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    overflow-y: hidden;
+  
+
+}
+.top{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    
+}
+.top-right{
+    padding: 12%;
+}
+.top-left{
+    
+   background-position: cover;
+    background-size: 100% 100%;
+}
+#top-l{
+    background-image: url(images/desktop-image-hero-1.jpg);
+}
+.bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30% ;
+    height: 40vh;
+    
+}
+.bottom img{
+    width: 100%;
+    
+    
+}
+.one:nth-child(2){
+    display: none;
+}
+.one:nth-child(3){
+    display: none;
+}
+
+.change-btn button{
+    background-color: hsl(0, 0%, 0%);
+
+}
+.one h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.one p{
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 1.1;
+    color: hsl(0, 0%, 63%);
+
+}
+.bottom-middle{
+    padding: 5%;
+    height: auto;
+    
+    
+}
+.bottom-middle h5{
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+   
+}
+.bottom-middle p{
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 1.1;
+    color: hsl(0, 0%, 63%);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    margin-top: 30px;
+    align-items: center;
+    gap: 30px;
+}
+ul .brand{
+   font-size: 1.5rem;
+}
+.bottom img{
+    height: 100%;
+}
+.one{
+    transition: display 5s;
+}
+.shop-btn{
+    background: none;
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: .9rem;
+}
+.shop-btn:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+.show-nav{
+    display: none;
+}
+.nav-div{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'League Spartan', sans-serif;
+        overflow-y: initial;
+        overflow-x: hidden;
+    
+    }
+
+    .top{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    #top-l{
+        background-image: url(images/mobile-image-hero-1.jpg);
+        background-position: cover;
+        height: 400px;
+        width: 100%;
+    }
+    .bottom{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    height: initial;
+        
+    }
+    .bottom-left, .bottom-right{
+        width: 100%;
+    }
+    .top-right{
+       
+        padding: initial;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+
+    }
+    .bottom-middle {
+        padding: initial;
+        height: auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+
+    }
+    .shop-btn{
+        margin-top: 10px;
+    }
+   
+    
+}
+@media only screen and (max-width: 400px){
+  .nav{
+      display: none;
+  }
+  .nav-div{
+      display: block;
+  }
+  .nav-mob{
+     
+      display: flex;
+      justify-content: space-around;
+     padding: 5%;
+      align-items: center;
+      color: #fff;
+      font-size: 1.7rem;
+     
+  }
+  .nav-mob{
+      height: 14px;
+  }
+  .show-nav{
+      background-color: #fff;
+      color: #000;
+      height: 90px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    margin-top: 30px;
+    align-items: center;
+    gap: 10px;
+}
+  ul li a{
+      color: #000;
+  }
+
+
+}
